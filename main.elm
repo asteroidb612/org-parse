@@ -27,12 +27,12 @@ displayPiece p = case p of
                      OtherLine -> div [] []
 
 parser : Parser (List Piece)
-parser = repeat (Exactly 150) lines
+parser = repeat oneOrMore lines
 
 lines : Parser Piece
 lines = oneOf [ headerLine
               , tabledLine
-              , succeed OtherLine
+              , succeed OtherLine |. end
               ]
 
 headerLine : Parser Piece

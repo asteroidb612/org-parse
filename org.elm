@@ -154,4 +154,5 @@ There was a between_moments function while you did two seperate comparisons.
 *** I'll point it out in the PR, get us out of here.
 ** Only the admin user-directive and a script touch the linkedin part of a clearbit response
 ** I'm not going to test this, it's too simple
-*** TJ how did you test this dude, he's not a user"""
+*** TJ how did you test this dude, he's not a user
+"""
